@@ -4,9 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
+    "create_content": "node scripts/cc.mjs",
+    "list_content": "ls -alsrt ./content ",
+    "rm_content":  "rm -rf ./content ./content.zip",
+    "zip_content":  "zip -r ./content.zip ./content; unzip -l ./content.zip",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "tbh",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "alpinejs": "^3.13.3",
+    "htmx.org": "^1.9.10"
+  }
 }
